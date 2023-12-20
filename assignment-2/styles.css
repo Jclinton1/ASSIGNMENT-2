@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Brown";
-  src: url(/assignment-2/css/fonts/BrownMedium\ Regular.ttf);
+  src: url(Regular.ttf);
 }
 
 @font-face {
   font-family: "Brown_Bold";
-  src: url(/assignment-2/css/fonts/Brown\ Bold.ttf);
+  src: url(Bold.ttf);
 }
 
 @font-face {
   font-family: "sofia";
-  src: url(/assignment-2/css/fonts/sofiapro-light.otf);
+  src: url(sofiapro-light.otf);
 }
 
 @font-face {
   font-family: "sofia_bold";
-  src: url(/assignment-2/css/fonts/Sofia\ Pro\ Bold.ttf);
+  src: url(Sofia\ Pro\ Bold.ttf);
 }
 
 :root {
@@ -128,6 +128,10 @@ input, select {
 #birthday {
   padding: 15px 60px;
 }
+
+#lastname, #height {
+  margin-inline-start: -22px;
+}
 .left-margin {
   margin-inline-start: 24px;
 }
@@ -141,7 +145,7 @@ select:hover {
 }
 
 [type=password] {
-  background-image: url(/assignment-2/icon/eye-regular.svg);
+  background-image: url(eye-regular.svg);
   background-position: calc(100% - 8px)  center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -149,7 +153,7 @@ select:hover {
 }
 
 [type=password]:not(:placeholder-shown) {
-  background-image: url(/assignment-2/icon/eye-slash-regular.svg);
+  background-image: url(eye-slash-regular.svg);
 }
 
 .btn button {
