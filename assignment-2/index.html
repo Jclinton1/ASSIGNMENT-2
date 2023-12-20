@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assignment-2/icon/Logo (2).png" />
+
+    <link rel="stylesheet" href="/assignment-2/css/styles.css" />
+    <title>Individual - Sign Up</title>
+  </head>
+  <body>
+    <main class="homepage">
+      <section class="section-1">
+        <div class="container">
+          <div class="logo">
+            <img src="/assignment-2/icon/Logo (2).png" alt="logo" />
+          </div>
+
+          <div class="intro-desc">
+            <h1>For Individuals</h1>
+            <p class="laptop-view">
+              Start benefiting from the wellness experience. For <br />
+              companies looking on increasing productivity, and improving <br />
+              organization wellness.
+            </p>
+
+            <p class="mobile-view">
+              "Inspiring wholesome harmony for the mind, body <br> and spirit, for
+              everyone, everywhere."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <form action="#">
+          <div class="input-flex">
+            <div class="form-input">
+              <label for="firstname">First Name</label> <br>
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+
+            <div class="form-input left-margin">
+              <label for="lastname">Last Name</label> <br>
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+          </div>
+
+          <div class="input-flex">
+            <div class="form-input">
+              <label for="gender">Gender</label> <br>
+              <select name="gender" id="gender" required>
+                <option value="" class="disabled" disabled selected hidden>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div class="form-input left-margin">
+              <label for="birthday">Date of Birth</label> <br />
+              <input type="date" id="birthday" name="birthday" placeholder="Select Date" required />
+            </div>
+          </div>
+
+          <div class="input-flex">
+            <div class="form-input">
+              <label for="weight">Weight (KG)</label> <br>
+              <input type="text" id="weight" name="weight" placeholder="Enter Weight" required />
+            </div>
+
+            <div class="form-input left-margin">
+              <label for="height">Height (CM)</label> <br>
+              <input type="text" id="height" name="height" placeholder="Enter Height here..." required />
+            </div>
+          </div>
+
+          <div class="form-input">
+            <label for="activity">Activity Level</label> <br>
+            <select name="activity" id="activity" required>
+              <option value="" class="disabled" disabled selected hidden>Select here</option>
+              <option value="level-1">Level 1</option>
+              <option value="level-2">Level 2</option>
+            </select>
+          </div>
+
+          <div class="form-input">
+            <label for="password">Password</label> <br>
+            <input type="password" id="password" name="password" placeholder=" " required />
+          </div>
+
+          <div class="btn">
+            <a href="#"><button>Register</button></a>
+          </div>
+
+          <div class="terms">
+            <p>
+              By clicking Register, you agree to our <a href="#">Terms of Use</a> and
+              our <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

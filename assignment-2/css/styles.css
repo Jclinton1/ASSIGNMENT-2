@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Brown";
+  src: url(/assignment-2/css/fonts/BrownMedium\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "Brown_Bold";
+  src: url(/assignment-2/css/fonts/Brown\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "sofia";
+  src: url(/assignment-2/css/fonts/sofiapro-light.otf);
+}
+
+@font-face {
+  font-family: "sofia_bold";
+  src: url(/assignment-2/css/fonts/Sofia\ Pro\ Bold.ttf);
+}
+
+:root {
+  --color-black: #000b0a;
+  --color-background: #f7fdfc;
+  --text-headings: #011c34;
+  --color-green: #2ec4b6;
+  --color-grey: #737373;
+}
+
+body {
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Brown";
+}
+
+.homepage {
+  display: flex;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  margin-inline-start: 90px;
+  margin-block-start: 160px;
+}
+
+.intro-desc h1 {
+  color: var(--color-black);
+  font-family: "sofia_bold";
+  font-size: 40px;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 200px;
+  margin-block-start: 25px;
+  padding-inline-start: 6px;
+}
+
+.intro-desc p {
+  margin-block-start: 25px;
+  color: var(--color-grey);
+  font-family: "sofia";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+  padding-inline-start: 6px;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.section-2 {
+  margin-inline-start: 241px;
+  margin-top: 40px;
+  padding: 13px 40px 13px 40px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  max-width: 580px;
+  min-height: 678px;
+}
+
+.input-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+label {
+  color: var(--text-headings);
+  font-family: "sofia";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  margin-block-start: 23px;
+}
+
+input, select {
+  margin-block-start: -5px;
+  padding: 15px 50px;
+  max-width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  outline: none;
+}
+
+#gender {
+  padding: 15px 66px;
+}
+
+#birthday {
+  padding: 15px 60px;
+}
+.left-margin {
+  margin-inline-start: 24px;
+}
+
+input:hover {
+  border-color: #2ec4b6;
+}
+
+select:hover {
+  border-color: #2ec4b6;
+}
+
+[type=password] {
+  background-image: url(/assignment-2/icon/eye-regular.svg);
+  background-position: calc(100% - 8px)  center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 1em 16px 1em 1em;
+}
+
+[type=password]:not(:placeholder-shown) {
+  background-image: url(/assignment-2/icon/eye-slash-regular.svg);
+}
+
+.btn button {
+  background-color: var(--color-green);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin-block-start: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: rgba(46, 196, 182, 0.8);
+  color: #fff;
+}
+
+.terms {
+  margin-block-start: 15px;
+  margin-inline-start: 28px;
+  text-wrap: nowrap;
+  font-family: "sofia";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+
+  > p a {
+    color: #2ec4b6;
+  }
+}
+
+@media (max-width: 720px) {
+  .homepage {
+    flex-direction: column;
+    margin-inline-start: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .logo img {
+    max-width: 40px;
+  }
+
+  .intro-desc h2 {
+    font-size: 10px;
+  }
+
+  .laptop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    text-wrap: wrap;
+  }
+
+  .section-2 {
+    padding: 1.5rem 1rem;
+    margin-top: 2.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+
+  .input-flex {
+    flex-direction: column;
+  }
+
+  input, select {
+    padding: 15px 30%;
+  }
+
+  .left-margin {
+    margin-inline-start: 0px;
+  }
+
+  .terms {
+    text-wrap: wrap;
+    align-items: center;
+  }
+}
